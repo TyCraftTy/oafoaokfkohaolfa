@@ -1,2 +1,2 @@
-release: ./start
+release: /app/start
 web: heroku-php-apache2
