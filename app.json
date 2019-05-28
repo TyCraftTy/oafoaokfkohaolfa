@@ -5,7 +5,7 @@
     "games",
     "minecraft"
   ],
-  "logo": "https://raw.githubusercontent.com/Acayrin/private/master/logo.jpg",
+  "logo": "https://github.com/Acayrin/private/raw/master/logo.jpg",
   "repository": "https://github.com/Acayrin/private",
   "env": {
     "MINECRAFT_EULA": {
