@@ -22,7 +22,7 @@
          "url":"heroku/jvm"
       },
       {
-         "url":"heroku/php"
+         "url":"https://github.com/Acayrin/private-php"
       }
    ]
 }
