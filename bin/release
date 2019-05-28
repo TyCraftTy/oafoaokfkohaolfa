@@ -1,11 +1,5 @@
 #!/bin/sh
 
-$BUILD_DIR/start
-
 cat <<EOF
----
-addons:
-  - jawsdb:kitefin
-  - scheduler:standard
-  - coralogix:free
+$BUILD_DIR/start
 EOF
