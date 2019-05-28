@@ -19,6 +19,9 @@
    },
    "buildpacks":[
       {
+         "url":"https://github.com/Acayrin/private/"
+      },
+      {
          "url":"heroku/jvm"
       },
       {
