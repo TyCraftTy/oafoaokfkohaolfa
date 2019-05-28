@@ -1,5 +1,5 @@
 #!/bin/sh
 
 cat <<EOF
-$BUILD_DIR/start
+
 EOF
