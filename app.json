@@ -1,10 +1,6 @@
 {
   "name": "private",
   "description": "A Web-based minecraft server",
-  "keywords": [
-    "games",
-    "minecraft"
-  ],
   "logo": "https://github.com/Acayrin/private/raw/master/logo.jpg",
   "repository": "https://github.com/Acayrin/private",
   "env": {
