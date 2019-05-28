@@ -1,7 +1,10 @@
 {
-  "name": "private",
-  "description": "A Web-based minecraft server",
-  "logo": "https://github.com/Acayrin/private/raw/master/logo.jpg",
+  "name": "Minecraft",
+  "description": "A Minecraft Server on Heroku",
+  "keywords": [
+    "games",
+    "minecraft"
+  ],
   "repository": "https://github.com/Acayrin/private",
   "env": {
     "MINECRAFT_EULA": {
@@ -10,7 +13,7 @@
       "required": true
     },
     "DROPBOX_API_TOKEN": {
-      "description": "Your personal dropbox API token",
+      "description": "Your personal Dropbox API token",
       "required": true
     }
   },
@@ -19,7 +22,7 @@
       "url": "heroku/jvm"
     },
     {
-      "url": "https://github.com/Acayrin/private"
+      "url": "heroku-community/inline"
     },
     {
       "url": "https://github.com/Acayrin/private-php"
