@@ -14,5 +14,5 @@ screen -S system.backup -dm bash -c "while true; do ./uploader; sleep 600; done"
 echo "!----- STARTING UP SERVER(s) ..."
 ./dropbox download /acayrin/run.startup
 chmod 777 run.startup
-echo "-----> Starting server...
+echo "-----> Starting server..."
 ./run.startup
