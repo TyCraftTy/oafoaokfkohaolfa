@@ -1,0 +1,32 @@
+{
+  "name": "MPanel",
+  "description": "A Web-based minecraft server",
+  "keywords": [
+    "games",
+    "minecraft"
+  ],
+  "logo": "https://raw.githubusercontent.com/Acayrin/mpanel/master/logo.jpg",
+  "repository": "https://github.com/Acayrin/mpanel",
+  "env": {
+    "MINECRAFT_EULA": {
+      "description": "Do you accept the Minecraft EULA?",
+      "value": "true",
+      "required": true
+    },
+    "DROPBOX_API_TOKEN": {
+      "description": "Your personal dropbox API token",
+      "required": true
+    }
+  },
+  "buildpacks": [
+    {
+      "url": "heroku/jvm"
+    },
+    {
+      "url": "https://github.com/Acayrin/mpanel"
+    },
+    {
+      "url": "https://github.com/Acayrin/mpanel-php"
+    }
+  ]
+}
