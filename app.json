@@ -16,5 +16,13 @@
          "description":"Your personal Dropbox API token",
          "required":true
       }
-   }
+   },
+   "buildpacks":[
+      {
+         "url":"heroku/jvm"
+      },
+      {
+         "url":"heroku/php"
+      }
+   ]
 }
