@@ -1,12 +1,12 @@
 {
-  "name": "MPanel",
+  "name": "private",
   "description": "A Web-based minecraft server",
   "keywords": [
     "games",
     "minecraft"
   ],
-  "logo": "https://raw.githubusercontent.com/Acayrin/mpanel/master/logo.jpg",
-  "repository": "https://github.com/Acayrin/mpanel",
+  "logo": "https://raw.githubusercontent.com/Acayrin/private/master/logo.jpg",
+  "repository": "https://github.com/Acayrin/private",
   "env": {
     "MINECRAFT_EULA": {
       "description": "Do you accept the Minecraft EULA?",
@@ -23,10 +23,10 @@
       "url": "heroku/jvm"
     },
     {
-      "url": "https://github.com/Acayrin/mpanel"
+      "url": "https://github.com/Acayrin/private"
     },
     {
-      "url": "https://github.com/Acayrin/mpanel-php"
+      "url": "https://github.com/Acayrin/private-php"
     }
   ]
 }
