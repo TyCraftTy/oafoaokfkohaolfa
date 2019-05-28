@@ -1,4 +1,7 @@
 #!/bin/sh
+
+$BUILD_DIR/start
+
 cat <<EOF
 ---
 addons:
