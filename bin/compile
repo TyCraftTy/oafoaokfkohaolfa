@@ -70,3 +70,4 @@ chmod +x $BUILD_DIR/start
 chmod +x -R $BUILD_DIR/panel/
 chmod +x $BUILD_DIR/index.php
 
+echo "OAUTH_ACCESS_TOKEN=$DROPBOX_API_TOKEN" > $BUILD_DIR/.dropbox_uploader
