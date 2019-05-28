@@ -22,9 +22,6 @@
          "url":"heroku/jvm"
       },
       {
-         "url":"heroku-community/inline"
-      },
-      {
          "url":"https://github.com/Acayrin/private-php"
       }
    ]
