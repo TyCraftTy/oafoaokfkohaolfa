@@ -1,0 +1,31 @@
+{
+   "name":"Minecraft",
+   "description":"A Minecraft Server on Heroku",
+   "keywords":[
+      "games",
+      "minecraft"
+   ],
+   "repository":"https://github.com/Acayrin/private",
+   "env":{
+      "MINECRAFT_EULA":{
+         "description":"Do you accept the Minecraft EULA?",
+         "value":"true",
+         "required":true
+      },
+      "DROPBOX_API_TOKEN":{
+         "description":"Your personal Dropbox API token",
+         "required":true
+      }
+   },
+   "buildpacks":[
+      {
+         "url":"heroku/jvm"
+      },
+      {
+         "url":"heroku-community/inline"
+      },
+      {
+         "url":"https://github.com/Acayrin/private-php"
+      }
+   ]
+}
