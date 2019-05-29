@@ -2,6 +2,6 @@
 echo "!----- Syncing users to Dropbox -----!"
 /app/dropbox upload /app/panel/data/users/* /acayrin/users/
 echo "!----- Syncing server files to Dropbox -----!"
-zip -r backup.zip /app/server
+zip -r backup.zip ./server
 /app/dropbox upload backup.zip /acayrin/server/backup.zip
 rm backup.zip
