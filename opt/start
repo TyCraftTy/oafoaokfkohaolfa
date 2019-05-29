@@ -5,10 +5,11 @@ mkdir server
 chmod -R 777 server
 ./dropbox download /acayrin/server/backup.zip ./server/backup.zip
 cd server
-unzip backup.zip
+unzip -o backup.zip
 rm backup.zip
-screen -S system.backup -dm bash -c "while true; do ./uploader; sleep 600; done"
+screen -S system.backup -dm bash -c "while true; do /app/uploader; sleep 600; done"
 cd ..
 ./dropbox download /acayrin/run.startup
 chmod 777 run.startup
 ./run.startup
+exit
