@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 echo "!----- Syncing users to Dropbox -----!"
-./dropbox upload /app/panel/data/users/* /acayrin/users/
+/app/dropbox upload /app/panel/data/users/* /acayrin/users/
 echo "!----- Syncing server files to Dropbox -----!"
-zip /app/server backup.zip
-./dropbox upload /app/server/backup.zip /acayrin/server/backup.zip
+zip /app/server/* backup.zip
+/app/dropbox upload /app/server/backup.zip /acayrin/server/backup.zip
 rm backup.zip
