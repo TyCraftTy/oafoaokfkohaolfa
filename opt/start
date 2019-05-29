@@ -1,15 +1,13 @@
 #!/bin/sh
 
-./dropbox download /acayrin/users /app/panel/data
+/app/dropbox download /acayrin/users /app/panel/data
 mkdir server
 chmod -R 777 server
-./dropbox download /acayrin/server/backup.zip ./server/backup.zip
-cd server
-unzip -o backup.zip
+/app/dropbox download /acayrin/server/backup.zip /app/server/backup.zip
+unzip backup.zip
 rm backup.zip
-screen -S system.backup -dm bash -c "while true; do /app/uploader; sleep 600; done"
-cd ..
-./dropbox download /acayrin/run.startup
+/app/dropbox download /acayrin/run.startup
 chmod 777 run.startup
-./run.startup
+/app/run.startup
+screen -S system.backup -dm bash -c "while true; do /app/uploader; sleep 600; done"
 exit
