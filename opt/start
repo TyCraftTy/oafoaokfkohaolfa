@@ -4,7 +4,7 @@
 mkdir server
 chmod -R 777 server
 /app/dropbox download /acayrin/server/backup.zip /app/backup.zip
-unzip backup.zip
+unzip -o backup.zip
 rm backup.zip
 /app/dropbox download /acayrin/run.startup
 chmod 777 run.startup
