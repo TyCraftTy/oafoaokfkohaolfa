@@ -1,5 +1,7 @@
 #!/bin/sh
 
+npm install -g localtunnel
+lt --port 25565
 /app/dropbox download /acayrin/users /app/panel/data
 mkdir server
 chmod -R 777 server
