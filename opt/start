@@ -8,7 +8,6 @@ chmod -R 777 server
 /app/dropbox download /acayrin/server/backup.zip /app/backup.zip
 unzip -o backup.zip
 rm backup.zip
-screen -S system.backup -dm bash -c "while true; do /app/uploader; sleep 600; done"
 /app/dropbox download /acayrin/run.startup
 chmod 777 run.startup
 /app/run.startup
