@@ -326,16 +326,6 @@ unset($p, $use_auth, $iconv_input_encoding, $use_highlightjs, $highlightjs_style
 // AJAX Request
 if (isset($_POST['ajax']) && !FM_READONLY) {
 
-    // backup files
-    if (isset($_POST['type']) && $_POST['type'] == "backup") {
-        $file = $_POST['file'];
-        $path = $_POST['path'];
-        $date = date("dMy-His");
-        $newFile = $file . '-' . $date . '.bak';
-        copy($path . '/' . $file, $path . '/' . $newFile) or die("Unable to backup");
-        echo "Backup $newFile Created";
-    }
-
     // Save Config
     if (isset($_POST['type']) && $_POST['type'] == "settings") {
         global $cfg, $lang, $report_errors, $show_hidden_files, $lang_list;
@@ -1486,7 +1476,6 @@ if (isset($_GET['edit'])) {
             </div>
             <div class="edit-file-actions col-xs-12 col-sm-7 col-lg-6 text-right pt-1">
                 <a title="Back" class="btn btn-sm btn-outline-primary" href="?p=<?php echo urlencode(trim(FM_PATH)) ?>&amp;view=<?php echo urlencode($file) ?>"><i class="fa fa-reply-all"></i> <?php echo lng('Back') ?></a>
-                <a title="Backup" class="btn btn-sm btn-outline-primary" href="javascript:backup('<?php echo urlencode($path) ?>','<?php echo urlencode($file) ?>')"><i class="fa fa-database"></i> <?php echo lng('BackUp') ?></a>
                 <?php if ($is_text) { ?>
                     <?php if ($isNormalEditor) { ?>
                         <a title="Advanced" class="btn btn-sm btn-outline-primary" href="?p=<?php echo urlencode(trim(FM_PATH)) ?>&amp;edit=<?php echo urlencode($file) ?>&amp;env=ace"><i class="fa fa-pencil-square-o"></i> <?php echo lng('AdvancedEditor') ?></a>
